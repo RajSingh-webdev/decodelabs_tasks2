@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 40" width="120" height="40" fill="currentColor">
+  <!-- Apex Logo -->
+  <polygon points="20,8 32,28 8,28" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round" />
+  <polygon points="20,16 26,26 14,26" />
+  <text x="44" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="16" letter-spacing="1">APEX</text>
+</svg>

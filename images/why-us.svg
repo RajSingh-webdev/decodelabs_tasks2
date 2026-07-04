@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" width="100%" height="100%" fill="none">
+  <defs>
+    <filter id="card-shadow" x="-10%" y="-5%" width="120%" height="115%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#09090b" flood-opacity="0.03" />
+      <feDropShadow dx="0" dy="1" stdDeviation="3" flood-color="#09090b" flood-opacity="0.02" />
+    </filter>
+    <linearGradient id="primary-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#1d4ed8" />
+    </linearGradient>
+    <linearGradient id="cyan-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#0891b2" />
+    </linearGradient>
+  </defs>
+
+  <!-- Clean Grid Pattern Background -->
+  <g stroke="#f4f4f5" stroke-width="1">
+    <line x1="50" y1="0" x2="50" y2="400" />
+    <line x1="150" y1="0" x2="150" y2="400" />
+    <line x1="250" y1="0" x2="250" y2="400" />
+    <line x1="350" y1="0" x2="350" y2="400" />
+    <line x1="450" y1="0" x2="450" y2="400" />
+    
+    <line x1="0" y1="50" x2="500" y2="50" />
+    <line x1="0" y1="150" x2="500" y2="150" />
+    <line x1="0" y1="250" x2="500" y2="250" />
+    <line x1="0" y1="350" x2="500" y2="350" />
+  </g>
+
+  <!-- Gentle soft background glow -->
+  <circle cx="250" cy="200" r="120" fill="#eff6ff" opacity="0.5" />
+  <circle cx="360" cy="180" r="80" fill="#ecfdf5" opacity="0.4" />
+
+  <!-- Layout container mimicking design/code canvas -->
+  <g filter="url(#card-shadow)">
+    <rect x="80" y="60" width="340" height="280" rx="12" fill="#ffffff" stroke="#e4e4e7" stroke-width="1.5" />
+  </g>
+
+  <!-- Sidebar navigation on canvas design -->
+  <rect x="81" y="61" width="90" height="278" rx="0" fill="#fcfcfc" />
+  <line x1="171" y1="60" x2="171" y2="340" stroke="#e4e4e7" stroke-width="1" />
+  
+  <circle cx="105" cy="85" r="8" fill="#e4e4e7" />
+  <rect x="120" y="81" width="35" height="8" rx="2" fill="#e4e4e7" />
+  
+  <circle cx="105" cy="115" r="8" fill="#dbeafe" />
+  <circle cx="105" cy="115" r="3" fill="#2563eb" />
+  <rect x="120" y="111" width="35" height="8" rx="2" fill="#2563eb" opacity="0.8" />
+
+  <circle cx="105" cy="145" r="8" fill="#e4e4e7" />
+  <rect x="120" y="141" width="35" height="8" rx="2" fill="#e4e4e7" />
+
+  <!-- Grid overlay alignment boxes (Design Specs) -->
+  <!-- Box 1 -->
+  <rect x="190" y="85" width="100" height="110" rx="8" fill="#ffffff" stroke="#e4e4e7" stroke-width="1" />
+  <rect x="202" y="98" width="50" height="8" rx="2" fill="#71717a" />
+  <rect x="202" y="114" width="75" height="6" rx="2" fill="#a1a1aa" opacity="0.6" />
+  <rect x="202" y="126" width="60" height="6" rx="2" fill="#a1a1aa" opacity="0.6" />
+  <!-- Layout Alignment guidelines -->
+  <line x1="190" y1="150" x2="290" y2="150" stroke="#2563eb" stroke-dasharray="2 2" stroke-width="1" />
+  <rect x="202" y="165" width="45" height="16" rx="4" fill="#dbeafe" />
+  <rect x="215" y="171" width="20" height="4" rx="2" fill="#2563eb" />
+
+  <!-- Box 2 -->
+  <rect x="305" y="85" width="100" height="110" rx="8" fill="#ffffff" stroke="#e4e4e7" stroke-width="1" />
+  <rect x="317" y="98" width="50" height="8" rx="2" fill="#71717a" />
+  <rect x="317" y="114" width="75" height="6" rx="2" fill="#a1a1aa" opacity="0.6" />
+  <rect x="317" y="126" width="60" height="6" rx="2" fill="#a1a1aa" opacity="0.6" />
+  <line x1="305" y1="150" x2="405" y2="150" stroke="#10b981" stroke-dasharray="2 2" stroke-width="1" />
+  <rect x="317" y="165" width="45" height="16" rx="4" fill="#d1fae5" />
+  <rect x="330" y="171" width="20" height="4" rx="2" fill="#10b981" />
+
+  <!-- Large bottom dashboard widget component -->
+  <rect x="190" y="215" width="215" height="105" rx="8" fill="#ffffff" stroke="#e4e4e7" stroke-width="1" />
+  
+  <rect x="205" y="230" width="80" height="8" rx="2" fill="#27272a" />
+  <rect x="205" y="244" width="120" height="6" rx="2" fill="#71717a" opacity="0.6" />
+  
+  <!-- UI chart bar graph mock -->
+  <g>
+    <!-- Bar 1 -->
+    <rect x="205" y="265" width="24" height="40" rx="3" fill="#f4f4f5" />
+    <rect x="205" y="280" width="24" height="25" rx="3" fill="#2563eb" />
+    <!-- Bar 2 -->
+    <rect x="237" y="265" width="24" height="40" rx="3" fill="#f4f4f5" />
+    <rect x="237" y="272" width="24" height="33" rx="3" fill="#10b981" />
+    <!-- Bar 3 -->
+    <rect x="269" y="265" width="24" height="40" rx="3" fill="#f4f4f5" />
+    <rect x="269" y="288" width="24" height="17" rx="3" fill="#2563eb" />
+    <!-- Bar 4 -->
+    <rect x="301" y="265" width="24" height="40" rx="3" fill="#f4f4f5" />
+    <rect x="301" y="275" width="24" height="30" rx="3" fill="#38bdf8" />
+  </g>
+
+  <!-- Spec callout markers (human design layout visual cues) -->
+  <g stroke="#ef4444" stroke-width="1" opacity="0.8">
+    <!-- horizontal measurement line -->
+    <line x1="70" y1="310" x2="70" y2="330" />
+    <line x1="80" y1="320" x2="171" y2="320" />
+    <line x1="171" y1="310" x2="171" y2="330" />
+    
+    <!-- vertical measurement line -->
+    <line x1="435" y1="60" x2="445" y2="60" />
+    <line x1="440" y1="60" x2="440" y2="340" />
+    <line x1="435" y1="340" x2="445" y2="340" />
+  </g>
+  
+  <rect x="110" y="311" width="34" height="18" rx="3" fill="#fee2e2" />
+  <text x="116" y="323" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9" font-weight="700" fill="#ef4444">90px</text>
+
+  <rect x="423" y="190" width="34" height="18" rx="3" fill="#fee2e2" />
+  <text x="428" y="202" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9" font-weight="700" fill="#ef4444">280p</text>
+</svg>

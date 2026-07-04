@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NovaStudio is a premium, modern digital creative agency specializing in engineering high-fidelity digital platforms, UI/UX systems, and bespoke web solutions.">
+  <title>NovaStudio | Digital Agency & Creative Engineering</title>
+  
+  <!-- Preconnect to external resources -->
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400&family=Manrope:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- SKIP LINK FOR ACCESSIBILITY -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- NAVIGATION HEADER -->
+  <header class="app-header">
+    <div class="container header-container">
+      <a href="#" class="logo-link" aria-label="NovaStudio Home">
+        <div class="logo-icon">
+          <img src="images/logo.svg" alt="" width="24" height="24" class="logo-img">
+        </div>
+        <span class="logo-text">NovaStudio</span>
+      </a>
+
+      <!-- Visual Checkbox Hack for Mobile -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle main menu" aria-controls="nav-menu">
+      <label for="nav-toggle" class="nav-toggle-burger">
+        <span class="burger-line line-1"></span>
+        <span class="burger-line line-2"></span>
+        <span class="burger-line line-3"></span>
+      </label>
+
+      <!-- NAVIGATION DRAWER -->
+      <nav id="nav-menu" class="nav-menu" aria-label="Primary site navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="#why-choose-us" class="nav-link">Why Us</a></li>
+          <li class="nav-item"><a href="#process" class="nav-link">Process</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#testimonials" class="nav-link">Testimonials</a></li>
+        </ul>
+        <div class="nav-cta-wrapper">
+          <a href="#cta" class="btn btn-primary btn-sm">Start Project</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN VIEWPORT CONTENT -->
+  <main id="main-content">
+
+    <!-- HERO SECTION (Split Layout Redesign) -->
+    <section class="section-hero" id="hero">
+      <div class="container hero-container grid-hero">
+        <!-- Left: copy columns -->
+        <div class="hero-content-col">
+          <div class="hero-tagline-wrapper">
+            <span class="hero-tagline">DEVICES • BRANDS • DIGITAL SOLUTIONS</span>
+          </div>
+          <h1 class="hero-title">
+            We engineer high-fidelity digital platforms.
+          </h1>
+          <p class="hero-description paragraph-lg">
+            NovaStudio collaborates with industry leaders to prototype, design, and launch custom web applications and visual identity systems. Built with clean code guidelines.
+          </p>
+          <div class="hero-ctas">
+            <a href="#projects" class="btn btn-primary">Check Featured Projects</a>
+            <a href="#cta" class="btn btn-secondary">Get In Touch</a>
+          </div>
+        </div>
+
+        <!-- Right: Modern workspace mockup dashboard illustration -->
+        <div class="hero-visual-col">
+          <div class="hero-image-wrapper">
+            <img src="images/hero-dashboard.svg" alt="Clean visual dashboard interface displaying modern metric chart and progress list blocks" class="hero-dashboard-img" width="550" height="420">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUSTED BY SECTION (Off-White Background) -->
+    <section class="section-trusted" aria-label="Brands we work with">
+      <div class="container">
+        <p class="trusted-headline">Trusted by forward-thinking companies worldwide</p>
+        <div class="trusted-logos">
+          <div class="logo-wrap">
+            <img src="images/logo-company1.svg" alt="Sphera Partner Logo" width="120" height="40" class="partner-logo">
+          </div>
+          <div class="logo-wrap">
+            <img src="images/logo-company2.svg" alt="Apex Partner Logo" width="120" height="40" class="partner-logo">
+          </div>
+          <div class="logo-wrap">
+            <img src="images/logo-company3.svg" alt="Nexus Partner Logo" width="120" height="40" class="partner-logo">
+          </div>
+          <div class="logo-wrap">
+            <img src="images/logo-company4.svg" alt="Volta Partner Logo" width="120" height="40" class="partner-logo">
+          </div>
+          <div class="logo-wrap">
+            <img src="images/logo-company5.svg" alt="Aura Partner Logo" width="120" height="40" class="partner-logo">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION (White Background) -->
+    <section class="section-services" id="services">
+      <div class="container">
+        <div class="section-header align-center">
+          <span class="sub-headline">Core Expertise</span>
+          <h2 class="section-title">Design &amp; Engineering Stack</h2>
+          <p class="section-subtitle paragraph-md">
+            Our modular structure allows us to build scalable web products and immersive brand aesthetics simultaneously.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- CARD 1 -->
+          <article class="service-card">
+            <div class="service-icon-box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="service-icon" aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h3 class="service-card-title">UI/UX &amp; Design Systems</h3>
+            <p class="service-card-text paragraph-sm">
+              We design structured modular components, typography grids, and accessible interactive prototypes optimized for clarity and scale.
+            </p>
+            <a href="#cta" class="service-card-link" aria-label="Learn more about UI/UX &amp; Design Systems">
+              <span>Learn Details</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrow" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </article>
+
+          <!-- CARD 2 -->
+          <article class="service-card">
+            <div class="service-icon-box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="service-icon" aria-hidden="true">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+                <polyline points="2 17 12 22 22 17"/>
+                <polyline points="2 12 12 17 22 12"/>
+              </svg>
+            </div>
+            <h3 class="service-card-title">Front-End Engineering</h3>
+            <p class="service-card-text paragraph-sm">
+              Semantic, clean, and accessibility-compliant web development using pure code engines. Optimized for zero load latency.
+            </p>
+            <a href="#cta" class="service-card-link" aria-label="Learn more about Front-End Engineering">
+              <span>Learn Details</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrow" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </article>
+
+          <!-- CARD 3 -->
+          <article class="service-card">
+            <div class="service-icon-box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="service-icon" aria-hidden="true">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                <line x1="8" y1="21" x2="16" y2="21"/>
+                <line x1="12" y1="17" x2="12" y2="21"/>
+              </svg>
+            </div>
+            <h3 class="service-card-title">Interactive Brand Spaces</h3>
+            <p class="service-card-text paragraph-sm">
+              We cultivate brand identity systems, modern vector graphics, and layouts that resonate across digital ecosystems.
+            </p>
+            <a href="#cta" class="service-card-link" aria-label="Learn more about Interactive Brand Spaces">
+              <span>Learn Details</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrow" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </article>
+
+          <!-- CARD 4 -->
+          <article class="service-card">
+            <div class="service-icon-box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="service-icon" aria-hidden="true">
+                <line x1="22" y1="2" x2="11" y2="13"/>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+              </svg>
+            </div>
+            <h3 class="service-card-title">Digital Deployment Strategy</h3>
+            <p class="service-card-text paragraph-sm">
+              Configuring modern CDNs, microfrontends, serverless architectures, and rendering options to keep pages globally instant.
+            </p>
+            <a href="#cta" class="service-card-link" aria-label="Learn more about Digital Deployment Strategy">
+              <span>Learn Details</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrow" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US SECTION (Light Gray Background) -->
+    <section class="section-why" id="why-choose-us">
+      <div class="container grid-why">
+        <div class="why-content-col">
+          <span class="sub-headline">The Nova Difference</span>
+          <h2 class="section-title">Designed for Performance, Built for Growth</h2>
+          <p class="why-body-intro paragraph-md">
+            We abandon heavy templates and boilerplate grids. Instead, we customize layout patterns that emphasize typographic contrast, high-speed page delivery, and seamless accessibility compliance.
+          </p>
+          
+          <ul class="why-benefits-list">
+            <li class="benefit-item">
+              <div class="benefit-indicator" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </div>
+              <div class="benefit-text">
+                <h3 class="benefit-title">Zero Dependency Footprint</h3>
+                <p class="paragraph-sm text-dim">No heavy JS frameworks, Bootstrap overlays, or custom library overheads. Sleek native modules only.</p>
+              </div>
+            </li>
+            <li class="benefit-item">
+              <div class="benefit-indicator" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </div>
+              <div class="benefit-text">
+                <h3 class="benefit-title">Accessibility Compliance</h3>
+                <p class="paragraph-sm text-dim">Native landmarks, focus rings, high-contrast layouts, and touch target sizes conforming to WCAG 2.1 AA.</p>
+              </div>
+            </li>
+            <li class="benefit-item">
+              <div class="benefit-indicator" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </div>
+              <div class="benefit-text">
+                <h3 class="benefit-title">Pixel-Perfect Spacing Systems</h3>
+                <p class="paragraph-sm text-dim">Utilizing responsive mathematical models with flex and grid settings that adapt fluidly across devices.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="why-visual-col">
+          <div class="why-image-wrapper">
+            <img src="images/why-us.svg" alt="Abstract design system vector showing geometric layout blocks and specifications" class="why-svg-graphic" width="500" height="400">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS SECTION (White Background) -->
+    <section class="section-process" id="process">
+      <div class="container">
+        <div class="section-header align-center">
+          <span class="sub-headline">Project Timeline</span>
+          <h2 class="section-title">The Engineering Blueprint</h2>
+          <p class="section-subtitle paragraph-md">
+            How we translate your product concept into a high-performing digital architecture.
+          </p>
+        </div>
+
+        <div class="process-grid">
+          <!-- Step 1 -->
+          <article class="process-card">
+            <span class="process-step-num" aria-hidden="true">01</span>
+            <h3 class="process-step-title">Discover</h3>
+            <p class="process-step-text paragraph-sm">
+              We run deep-dive sessions to outline product constraints, brand challenges, audience demographics, and key architectural metrics.
+            </p>
+            <div class="process-connector" aria-hidden="true"></div>
+          </article>
+
+          <!-- Step 2 -->
+          <article class="process-card">
+            <span class="process-step-num" aria-hidden="true">02</span>
+            <h3 class="process-step-title">Design</h3>
+            <p class="process-step-text paragraph-sm">
+              Crafting cohesive typography architectures, layout grids, wireframes, and design components to frame the user journey.
+            </p>
+            <div class="process-connector" aria-hidden="true"></div>
+          </article>
+
+          <!-- Step 3 -->
+          <article class="process-card">
+            <span class="process-step-num" aria-hidden="true">03</span>
+            <h3 class="process-step-title">Develop</h3>
+            <p class="process-step-text paragraph-sm">
+              Translating interface mockups into structured semantic HTML5, fluid layouts, and lightweight modular CSS3 styling code.
+            </p>
+            <div class="process-connector" aria-hidden="true"></div>
+          </article>
+
+          <!-- Step 4 -->
+          <article class="process-card">
+            <span class="process-step-num" aria-hidden="true">04</span>
+            <h3 class="process-step-title">Launch</h3>
+            <p class="process-step-text paragraph-sm">
+              Conducting extensive lint audits, validating responsive layouts on remote assets, and deploying to global CDN servers.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SECTION (Light Gray Background) -->
+    <section class="section-projects" id="projects">
+      <div class="container">
+        <div class="section-header split-header">
+          <div class="header-left">
+            <span class="sub-headline">Case Studies</span>
+            <h2 class="section-title">Selected Case Studies</h2>
+          </div>
+          <div class="header-right">
+            <p class="paragraph-md text-dim max-w-400">
+              A curated look at digital products and architectures designed and engineered to scale natively.
+            </p>
+          </div>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card">
+            <a href="#cta" class="project-link" aria-label="View Vortex Platform case study">
+              <div class="project-image-box">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Vortex analytics dashboard interface showing geometric lines and clean dashboard features" class="project-img" loading="lazy">
+              </div>
+              <div class="project-content">
+                <div class="project-meta">
+                  <span class="project-tag">SAAS PLATFORM</span>
+                  <span class="project-date">2026</span>
+                </div>
+                <h3 class="project-title">Vortex Platform</h3>
+                <div class="project-action">
+                  <span>View Case Study</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrow" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </div>
+              </div>
+            </a>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card">
+            <a href="#cta" class="project-link" aria-label="View Solas Brand Identity case study">
+              <div class="project-image-box">
+                <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80" alt="Solas brand aesthetic displaying elegant abstract floating blocks" class="project-img" loading="lazy">
+              </div>
+              <div class="project-content">
+                <div class="project-meta">
+                  <span class="project-tag">BRAND IDENTITY</span>
+                  <span class="project-date">2026</span>
+                </div>
+                <h3 class="project-title">Solas Architecture</h3>
+                <div class="project-action">
+                  <span>View Case Study</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrow" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </div>
+              </div>
+            </a>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card">
+            <a href="#cta" class="project-link" aria-label="View Aether Mobile Design case study">
+              <div class="project-image-box">
+                <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=800&q=80" alt="Aether smartphone screen layout detailing responsive graphic system configurations" class="project-img" loading="lazy">
+              </div>
+              <div class="project-content">
+                <div class="project-meta">
+                  <span class="project-tag">MOBILE ECOSYSTEM</span>
+                  <span class="project-date">2025</span>
+                </div>
+                <h3 class="project-title">Aether Mobile</h3>
+                <div class="project-action">
+                  <span>View Case Study</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrow" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </div>
+              </div>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT US SECTION (White Background, Achievements, Statistics) -->
+    <section class="section-about" id="about">
+      <div class="container grid-about">
+        <!-- Text details -->
+        <div class="about-content-col">
+          <span class="sub-headline">Who We Are</span>
+          <h2 class="section-title">Designers of clean layouts, engineers of robust systems.</h2>
+          <p class="paragraph-md text-dim">
+            NovaStudio is an independent creative development house. We work as a core extension of product teams who want to build light, fluid, and high-converting web applications.
+          </p>
+          <p class="paragraph-sm text-dim margin-top-md">
+            Our work is grounded in typographic rigor, optimized performance budgets, and pixel-level engineering. We ensure our layouts remain fully usable and beautiful across any platform scale.
+          </p>
+          
+          <!-- Key Achievements -->
+          <div class="achievements-box">
+            <h3 class="achievement-heading">Key Accomplishments</h3>
+            <ul class="achievements-bullet-list">
+              <li>🏆 Formed dynamic designs featured on prominent digital developer portals.</li>
+              <li>⚡ Engineered layouts maintaining average performance scores above 98%.</li>
+              <li>📱 Shipped modular digital systems for Fortune 500 networks.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Dynamic stats cards column -->
+        <div class="about-stats-col">
+          <div class="stats-panel">
+            <div class="stat-card">
+              <span class="stat-number">98%</span>
+              <h4 class="stat-label">Client Satisfaction</h4>
+              <p class="stat-desc">Based on annual project review ratings.</p>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">150+</span>
+              <h4 class="stat-label">Projects Launched</h4>
+              <p class="stat-desc">Across SaaS, e-commerce, and brand fields.</p>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">35+</span>
+              <h4 class="stat-label">Industry Awards</h4>
+              <p class="stat-desc">For speed, responsive layout, and UX details.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION (Light Gray Background, Statically Stacked Cards) -->
+    <section class="section-testimonials" id="testimonials">
+      <div class="container">
+        <div class="section-header align-center">
+          <span class="sub-headline">Client Feedback</span>
+          <h2 class="section-title">Endorsed by Technical Leaders</h2>
+          <p class="section-subtitle paragraph-md">
+            We collaborate as core technology partners to shape scalable UI/UX systems. Here is what our clients say.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          <!-- CARD 1 -->
+          <blockquote class="testimonial-card">
+            <p class="testimonial-quote">
+              "NovaStudio transformed our platform. Their engineering and design precision exceeded our highest benchmarks, providing an architecture that easily formats itself for any user device."
+            </p>
+            <cite class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80" alt="Marcus Vance portrait photo" class="author-avatar" loading="lazy">
+              <div class="author-info">
+                <span class="author-name">Marcus Vance</span>
+                <span class="author-title">CTO at Volta</span>
+              </div>
+            </cite>
+          </blockquote>
+
+          <!-- CARD 2 -->
+          <blockquote class="testimonial-card">
+            <p class="testimonial-quote">
+              "The attention to detail and sleek interaction paradigms they built set a new standard for our industry. Navigating the code is as satisfying as viewing the final frontend."
+            </p>
+            <cite class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&h=150&q=80" alt="Elena Rostova portrait photo" class="author-avatar" loading="lazy">
+              <div class="author-info">
+                <span class="author-name">Elena Rostova</span>
+                <span class="author-title">VP of Product at Sphera</span>
+              </div>
+            </cite>
+          </blockquote>
+
+          <!-- CARD 3 -->
+          <blockquote class="testimonial-card">
+            <p class="testimonial-quote">
+              "They behave as partners, not vendors. Their modular design architecture made scaling our project simple, adapting to our global client requests with perfect visual consistency."
+            </p>
+            <cite class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&h=150&q=80" alt="Kenji Tanaka portrait photo" class="author-avatar" loading="lazy">
+              <div class="author-info">
+                <span class="author-name">Kenji Tanaka</span>
+                <span class="author-title">Founder of Apex</span>
+              </div>
+            </cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- CALL-TO-ACTION (CTA) SECTION (White Background with Soft Shadow Card) -->
+    <section class="section-cta" id="cta">
+      <div class="container">
+        <div class="cta-card">
+          <div class="cta-content">
+            <span class="sub-headline">Let's Connect</span>
+            <h2 class="cta-title">Let's shape the digital frontier together.</h2>
+            <p class="cta-desc paragraph-md text-dim">
+              Whether you need to design a system from base variables or engineer a high-throughput product, NovaStudio is ready to collaborate.
+            </p>
+            <div class="cta-buttons">
+              <a href="mailto:hello@novastudio.agency" class="btn btn-primary">Start a Project</a>
+              <a href="#services" class="btn btn-secondary">Explore Capabilities</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="app-footer">
+    <div class="container footer-grid">
+      <!-- Brand column -->
+      <div class="footer-brand-col">
+        <a href="#" class="logo-link margin-bottom-sm" aria-label="NovaStudio Home">
+          <div class="logo-icon">
+            <img src="images/logo.svg" alt="" width="24" height="24" class="logo-img">
+          </div>
+          <span class="logo-text">NovaStudio</span>
+        </a>
+        <p class="footer-brand-desc paragraph-sm text-dim">
+          Premium creative development engineering company. Building zero-dependency, layout-perfect digital interfaces.
+        </p>
+      </div>
+
+      <!-- Links column 1 -->
+      <div class="footer-links-col">
+        <h4 class="footer-col-title">Navigation</h4>
+        <ul class="footer-links-list">
+          <li><a href="#services" class="footer-link">Services</a></li>
+          <li><a href="#why-choose-us" class="footer-link">Why Choose Us</a></li>
+          <li><a href="#process" class="footer-link">Our Process</a></li>
+          <li><a href="#projects" class="footer-link">Featured Work</a></li>
+        </ul>
+      </div>
+
+      <!-- Links column 2 -->
+      <div class="footer-links-col">
+        <h4 class="footer-col-title">Agency</h4>
+        <ul class="footer-links-list">
+          <li><a href="#about" class="footer-link">About Us</a></li>
+          <li><a href="#testimonials" class="footer-link">Client Reviews</a></li>
+          <li><a href="#cta" class="footer-link">Contact</a></li>
+          <li><a href="mailto:hello@novastudio.agency" class="footer-link">hello@novastudio.agency</a></li>
+        </ul>
+      </div>
+
+      <!-- Socials column -->
+      <div class="footer-links-col">
+        <h4 class="footer-col-title">Connect</h4>
+        <ul class="footer-links-list">
+          <li><a href="#" class="footer-link">LinkedIn</a></li>
+          <li><a href="#" class="footer-link">Twitter / X</a></li>
+          <li><a href="#" class="footer-link">GitHub</a></li>
+          <li><a href="#" class="footer-link">Dribbble</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom sub-footer -->
+    <div class="container footer-bottom">
+      <div class="footer-bottom-flex">
+        <p class="copyright-text paragraph-xs text-dim">
+          &copy; 2026 NovaStudio Agency. All rights reserved. Created with clean markup standards.
+        </p>
+        <div class="footer-legal-links">
+          <a href="#" class="footer-link paragraph-xs text-dim">Privacy Policy</a>
+          <a href="#" class="footer-link paragraph-xs text-dim">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
